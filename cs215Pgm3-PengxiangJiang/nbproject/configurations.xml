@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configurationDescriptor version="79">
+  <logicalFolder name="root" displayName="root" projectFiles="true" kind="ROOT">
+    <df name="cs215Pgm3" root=".">
+      <df name="cards">
+      </df>
+      <df name="debug">
+        <in>moc_cardwidget.cpp</in>
+        <in>moc_cardwindow.cpp</in>
+        <in>qrc_cards.cpp</in>
+      </df>
+      <df name="release">
+      </df>
+      <in>CardDeck.cpp</in>
+      <in>CardDeck.h</in>
+      <in>PlayingCard.cpp</in>
+      <in>PlayingCard.h</in>
+      <in>cardwidget.cpp</in>
+      <in>cardwidget.h</in>
+      <in>cardwindow.cpp</in>
+      <in>cardwindow.h</in>
+      <in>cs215pgm3.cpp</in>
+      <in>globals.h</in>
+      <in>main.cpp</in>
+    </df>
+    <logicalFolder name="ExternalFiles"
+                   displayName="重要文件"
+                   projectFiles="false"
+                   kind="IMPORTANT_FILES_FOLDER">
+      <itemPath>Makefile</itemPath>
+      <itemPath>cs215pgm3.pro</itemPath>
+    </logicalFolder>
+  </logicalFolder>
+  <sourceFolderFilter>^(nbproject)$</sourceFolderFilter>
+  <sourceRootList>
+    <Elem>.</Elem>
+  </sourceRootList>
+  <projectmakefile>Makefile</projectmakefile>
+  <confs>
+    <conf name="Default" type="0">
+      <toolsSet>
+        <remote-sources-mode>LOCAL_SOURCES</remote-sources-mode>
+        <compilerSet>default</compilerSet>
+      </toolsSet>
+      <makefileType>
+        <makeTool>
+          <buildCommandWorkingDir>.</buildCommandWorkingDir>
+          <buildCommand>${MAKE} -f Makefile</buildCommand>
+          <cleanCommand>${MAKE} -f Makefile clean</cleanCommand>
+          <executablePath>debug/cs215pgm3.exe</executablePath>
+          <ccTool>
+            <incDir>
+              <pElem></pElem>
+              <pElem>f:/Qt/2010.02.1/qt/include/QtCore</pElem>
+              <pElem>f:/Qt/2010.02.1/qt/include/ActiveQt</pElem>
+              <pElem>f:/Qt/2010.02.1/qt/include</pElem>
+              <pElem>debug</pElem>
+              <pElem>f:/Qt/2010.02.1/qt/include/QtGui</pElem>
+              <pElem>f:/Qt/2010.02.1/qt/mkspecs/default</pElem>
+            </incDir>
+            <preprocessorList>
+              <Elem>QT_CORE_LIB</Elem>
+              <Elem>QT_LARGEFILE_SUPPORT</Elem>
+              <Elem>QT_THREAD_SUPPORT</Elem>
+              <Elem>QT_GUI_LIB</Elem>
+              <Elem>UNICODE</Elem>
+              <Elem>QT_NEEDS_QMAIN</Elem>
+              <Elem>QT_DLL</Elem>
+            </preprocessorList>
+          </ccTool>
+        </makeTool>
+      </makefileType>
+      <item path="CardDeck.cpp" ex="true" tool="1" flavor="0">
+      </item>
+      <item path="PlayingCard.cpp" ex="true" tool="1" flavor="0">
+      </item>
+      <item path="main.cpp" ex="true" tool="1" flavor="0">
+      </item>
+    </conf>
+  </confs>
+</configurationDescriptor>

@@ -1,0 +1,107 @@
+/* v1.2
+ * cs215pgm3.cpp : main project file 
+ * 
+ *          Author:
+ * Completion Date:
+ *
+ * This file should interface with the graphical user interface to
+ * create a Deck object that contains a multi-dimensional array of Card 
+ * objects that can be shuffled and examined.
+ * 
+ * The header file "globals.h" contains some useful definitions that your
+ * classes and functions can use, most notably enums for card suits and ranks.
+ * 
+ * In addition to your classes, you need to write the following functions 
+ * (HINT: Just use these functions to call the corresponding public functions
+ * in your objects!):
+ * *  ***************************************************************************** 
+ * 
+ * void getCard(int row, int column, char* cardString)
+ * 
+ *       INPUT: A character array for storing the output, the row of the card, 
+ *              the column of the card
+ *      OUTPUT: NONE
+ * SIDE EFFECT: This function should find the card represented in the passed row
+ * and column of your deck and return a character string representing that card.
+ * This string should always be 2 characters long followed by a null byte.
+ * The representation of the cards are as follows:
+ *     9 of spades   = "S9"
+ *    10 of hearts   = "HT"
+ *  Jack of diamonds = "DJ"
+ * Queen of clubs    = "CQ"
+ *   Ace of spades   = "SA"
+ * etc.
+  *****************************************************************************
+ *
+ * void shuffleCards()
+ *       INPUT: NONE
+ *      OUTPUT: NONE
+ * SIDE EFFECT: This function will reorder the playing crads  in your deck in a
+ * "random" sequence. 
+ * 
+ * In this function you should make use of the rand() function from <cstdlib>
+ * to pick 2 cards in your multi-dimensional array at random and swap them.
+ * Note that you can get a random number between 0 and X by using: rand()%x;
+ * Look up the modulus (%) operator if you are not familiar with it.
+ * You should make a random swap as described above SHUFFLE_RANDOM_SWITCHES 
+ * number of times. SHUFFLE_RANDOM_SWITCHES is defined in the "globals.h" 
+ * header file.
+ *
+ *****************************************************************************
+ * 
+ * void matchTwoCards(int row1, int column1, int row2, int column2)
+ *       INPUT: two cards as represented by their rows and columns in the deck
+ *      OUTPUT: NONE
+ * SIDE EFFECT: The variable(s) that keep track of which and how many cards
+ *              have already been matched will have been updated accordingly
+ *
+ * This function should compare the two cards at their corresponding locations
+ * in the deck. If they are equal (i.e. of equal suit and rank), appropriate
+ * variables should be updated so that a subsequent call to isCardMatched() (see
+ * below) will return true for both locations.
+ *
+ *****************************************************************************
+ * 
+ * bool isCardMatched(int row, int column)
+ *       INPUT: Two integers representing the row and column of the card display
+ *      OUTPUT: A boolean indicating if the card at the row and column has been
+ *              matched with its pair.
+ * SIDE EFFECT: NONE
+ * 
+ * This function should reference the variable(s) modified by matchTwoCards() to
+ * assess a card's matching state. If the card has already been matched, the
+ * function should return true. The GUI will use this information to display
+ * a checkmark at the card's position.
+ *
+ *****************************************************************************
+ * bool isGameOver()
+ *       INPUT: NONE
+ *      OUTPUT: A boolean indicating if all the cards on the game board have
+ *              been matched. true if all cards have been matched and false 
+ *              otherwise
+ * SIDE EFFECT: NONE
+ * 
+ * This function should reference the variable(s) modified by matchTwoCards() to
+ * assess whether all cards have already been matched. The GUI will use this
+ * information to display a final message box and end the game.
+ * 
+ */
+
+#include "globals.h"
+
+// Declare any global variables (your deck object) here:
+
+
+// Initial implementation of the functions:
+ 
+void getCard(int row, int column, char cardString[]){}
+
+void shuffleCards(){}
+
+void matchTwoCards(int row1, int column1, int row2, int column2){}
+
+bool isCardMatched(int row, int column){return false;}
+
+bool isGameOver(){return false;};
+
+
